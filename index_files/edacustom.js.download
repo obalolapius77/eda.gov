@@ -1,0 +1,32 @@
+// Custom EDA scripts
+// JS for lightbox popup etc.,
+(function ($) {
+  Drupal.behaviors.edacustom = {
+        attach: function (context, settings) {
+            $(document).ready(function () {
+                $("body.node-page--node-type-success-story h1.page-title").each(function () {
+                    if ($('.l-page__main .featured-image')[0]) {
+                        $(this).detach().insertBefore(".l-page__main .featured-image");
+                    }
+                });
+                $("body.node-page--node-type-article h1.page-title").each(function () {
+                    if ($('.l-page__main .featured-image')[0]) {
+                        $(this).detach().insertBefore(".l-page__main .featured-image");
+                    }
+                });
+                $('.usa-sidenav > li:last-child > a:contains("Programs")').parent().addClass('show-less');
+                $('.usa-sidenav li > a:contains("Current List of University Centers")').parent().addClass('show-less cluc');
+                $(".usa-sidenav > li:last-child > ul li").each(function() {
+                    if ($(this).hasClass("is-active-trail")) {
+                        $(this).parent().parent('li.is-active-trail.is-expanded').addClass('show-active');
+                    }
+                });
+                if ( $( "#edit-funding-status-6565" ).length ) {
+                    $('#edit-funding-status-6565').trigger('click').once();
+                }
+                $('span.funding-status-value:contains("Closed")').addClass('funding-status-closed');
+                $('span.funding-status-value:contains("Open")').addClass('funding-status-open');
+            });
+        }
+    };
+})(jQuery);

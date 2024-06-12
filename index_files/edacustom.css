@@ -1,0 +1,168 @@
+/* Programs and University page side menu styles */
+ul.usa-sidenav li.is-expanded.show-active > .usa-sidenav__sublist > .usa-nav__submenu-item {
+  display: none;
+}
+
+ul.usa-sidenav li.is-expanded.show-active > .usa-sidenav__sublist > .usa-nav__submenu-item.is-active-trail {
+  display: block;
+}
+ul.usa-sidenav li.cluc ul li {  display: none; }
+ul.usa-sidenav li.cluc ul li.is-active-trail {  display: block; }
+.funding-status {
+  display:block;
+  margin: 15px 0;
+}
+.funding-status-label {
+  background-color: #EDF6FC;
+  color: #000000;
+  display: inline-block;
+  padding: 5px 10px;
+  width: auto;
+}
+.funding-status-value {
+  background-color: #C4562F;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 10px;
+  width: auto;
+}
+.funding-status-closed:after {
+  /*content: "\00D7";*/
+  content: "X";
+  font-size: 14px;
+  padding: 0 0 0 10px;
+}
+.funding-status-open {
+  background-color: #08A96D;
+}
+.funding-status-open:after {
+  background-color: #08A96D;
+  content: "\2713";
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 55rem) {
+  .node-page--node-type-list-page .fieldset--checkboxes {
+    position: initial
+  }
+
+  .l-listing-header {
+    display: initial;
+  }
+}
+
+@media (max-width: 40rem) {
+  .node-page--node-type-list-page .l-listing-header__widgets > form .form-item__label {
+    line-height: 2.5rem;
+  }
+}
+
+body.node-page .l-page__body-content {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+body.node-page .formattedtext-section {
+  display: block;
+  width: 100%;
+}
+
+body.node-page .formattedtext-section .embedwrapper {
+  border: 1px solid #ededed;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+body.node-page .formattedtext-section embed {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+body.node-page .formattedtext-section fieldset {
+  border: 3px solid #003150;
+  margin: 0 57px 30px 54px;
+  padding: 0 10px 0 0;
+}
+
+body.node-page .formattedtext-section legend {
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  font-family: 'Public Sans Web';
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+body.node-page .formattedtext-section .leg-clr {
+  background: #dba02a;
+  border-radius: 50px;
+  display: inline-block;
+  height: 15px;
+  margin: 0 10px 0 0;
+  width: 15px;
+}
+
+body.node-page .formattedtext-section .leg-clr1 {
+  background: #dba02a;
+}
+
+body.node-page .formattedtext-section .leg-clr2 {
+  background: #952e21;
+}
+
+body.node-page .formattedtext-section .leg-clr3 {
+  background: #86d2e0;
+}
+
+body.node-page .formattedtext-section .leg-clr4 {
+  background: #24a024;
+}
+
+body.node-page .formattedtext-section .leg-clr5 {
+  background: #002b52;
+}
+
+body.node-page .formattedtext-section .leg-clr6 {
+  background: #1085c6;
+}
+
+body.node-page fieldset ul {
+  -moz-column-count: 2;
+  column-count: 2;
+  list-style: none;
+}
+
+@media (min-width: 55rem) {
+  body.node-page fieldset ul {
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+body.node-page fieldset li {
+  font-family: 'Public Sans Web';
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+body.node-page--node-type-list-page .formattedtext-section {
+  width: 95%;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+
+}
